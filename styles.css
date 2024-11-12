@@ -1,13 +1,63 @@
+/* conteneur global */
 html, body {
     height: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
+    background-color: white;
+
 }
 
-.footer-section {
-    align-items: center;
+.h1 {
+    justify-content: left;
 }
+.footer-section {
+    display: flex;
+    justify-content: center;
+    padding: 80%;
+    background-color: #703107af;
+    color: rgb(70, 236, 120);
+    width: 100%;
+}
+
+/* liens */
+.footer-section ul {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.footer-section ul a {
+    color: rgb(56, 221, 152);
+    text-decoration: none;
+    
+}
+
+.footer-section h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* icônes  */
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
 
 .auteur-section {
-    flex-direction: column;
+    text-align: center;
+    background-color: #222;
+    color: #0ac752;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
+

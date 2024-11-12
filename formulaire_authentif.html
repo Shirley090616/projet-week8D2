@@ -2,8 +2,11 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, 
+                initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers 
+    le fichier CSS -->
     <title>Formulaire d'authentification</title>
 </head>
 <body>
@@ -14,30 +17,48 @@
         <form>
             <!-- Champ Email -->
             <div class="mb-3"> <!--margin-bottom (marge en haut)-->
-                <label for="email" class="form-label">Adresse Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+                <label for="email" class="form-label">Adresse 
+                Email</label>
+                <input type="email" class="form-control" 
+                id="email" placeholder="Entrez votre email" 
+                required>
             </div>
 
             <!-- Champ Mot de passe -->
             <div class="mb-3">
-                <label for="password" class="form-label">Mot de passe</label>
-                <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe" required>
+                <label for="password" class="form-label">
+                    Mot de passe</label>
+                <input type="password" class="form-control" 
+                id="password" placeholder="Entrez votre mot de passe" required>
             </div>
 
             <!-- Boutons Inscription et Connexion -->
             <div class="mb-3">
-                <button type="submit" class="btn btn-primary">Inscription</button>
-                <button type="submit" class="btn btn-success ms-2">Connexion</button>
+                <button type="submit" class="btn btn-primary">
+                        Inscription</button>
+                <button type="submit" class="btn btn-success 
+                        ms-2">Connexion</button>
             </div>
-
+            <!--a href="#"-->
             <!-- Lien Mot de passe oublié -->
             <div class="mb-3">
-                <a href="#" class="text-decoration-none">Mot de passe oublié ?</a>
+                <input type="email" class="form-control" 
+                id="email" placeholder="Entrez votre email" 
+                required>
+                <button type="submit" class="text-decoration-none">Mot de 
+                    passe oublié ?</button>            
             </div>
 
             <!-- Lien Changement de mot de passe -->
             <div class="mb-3">
-                <a href="#" class="text-decoration-none">Changer de mot de passe</a>
+                <input type="email" class="form-control" 
+                id="email" placeholder="Entrez votre email" 
+                required>
+                <input type="email" class="form-control" 
+                id="email" placeholder="Entrez votre mot de passe actuel" 
+                required>
+                <a href="#" class="text-decoration-none">Changer 
+                de mot de passe</a>
             </div>
         </form>
     </div>

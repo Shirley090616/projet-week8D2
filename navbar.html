@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <title>Barre de navidation</title>
+    </head>
+
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark"> 
+    <!--navbar expand lg permet l'adaptation à n'importe quel ecran, menu deroulant pour les petits ecran-->
+
+    <div class="container-fluid"> <!--fluid permet que le conteneur occupe la largeur de n'importe quel ecran-->
+      <a class="navbar-brand" href="#">Barre de navigation</a>
+    </div> 
+      <!--Mettre un URL a la place de # pour lié à une autre page; changer BARRE DE NAVIGATION-->
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <!--toggler rend le bouton compatible av menu mobile; collapse = cacher-->  
+      <span class="navbar-toggler-icon"></span> <!--applique un style de bouton plus petit pour ecran reduit-->
+    </button>
+
+    <!--MENU DE NAVIGATION--> <!--me-auto (margin end) pr alignement a gauche et ms-auto (margin start) pr alignement à droite-->
+    <div class="collapse navbar-collapse text-light " id="navbarColor02">      
+      <ul class="navbar-navd"> <!--me-auto = aligne les elements à gauche-->
+
+        <style>
+          .nav-link{
+          display: flex;
+          justify-content: center;align-items: center;
+          }
+        </style>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Trouver des événements<span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">créer des événements</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trouver mes billets</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Connexion</a>
+          </li>
+
+        <!--MENU DEROULANT-->
+          <li class="nav-item dropdown"><!--créer un element du menu av un sous-menu déroulant-->
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Liste déroulante
+            </a>
+          </li>
+          <!--dropdown-toggle affiche le menu deroulant quand on survole ou qu'on clique sur le lien-->
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <!--dropdown-item applique un styles aux elements du menu deroulant-->
+        </div>
+
+        <div class="dropdown-divider">
+        <!--ajoute une ligne séparatrice entre les elemnts du menu-->
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+        
+      </ul>
+
+      <!--FORMULAIRE DE RECHERCHE-->
+      <form class="d-flex"><!--active flexbox pour alignement texte-->
+        <input class="form-control me-sm-2" type="search" placeholder="Rechercher">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Rechercher</button>
+      </form>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  </nav>
+</html>  

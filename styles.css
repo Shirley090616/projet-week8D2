@@ -1,72 +1,89 @@
 /* barre de navigation */
 .nav-link{
-        display: flex;
-        align-items: center;justify-content: center;
-        color:aliceblue
-        }
+display: flex;
+align-items: center;justify-content: center;
+color:aliceblue
+}
 
 
-/* conteneur global */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+        
+/* 1 contenaire */
 html, body {
     height: 100%;
-    margin: 0;
     display: flex;
     flex-direction: column;
-    background-color: white;
-
+    font-family: Arial, sans-serif;
 }
-
-.h1 {
-    justify-content: left;
-}
+        
 .footer-section {
-    display: flex;
-    justify-content: center;
-    padding: 80%;
-    background-color: #703107af;
-    color: rgb(70, 236, 120);
-    width: 100%;
+background-color: #2ee291;
+color: #ae4a07a9;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
 }
-
-/* liens */
+        
+.footer-section h1,
+.footer-section h2 {
+margin-bottom: 10px;
+}
+        
 .footer-section ul {
-    list-style: none;
-    padding: 10px;
-    margin: 10px;
-    justify-content: space-around;
+list-style-type: none;
+}
+        
+.footer-section ul li {
+margin: 5px 0;
+}
+        
+.footer-section ul li a {
+color: hsla(30, 83%, 35%, 0.915);
+text-decoration: none;
+}
+        
+.footer-section ul li a:hover {
+color: hsla(27, 83%, 33%, 0.859);
 }
 
-.footer-section ul a {
-    color: rgb(56, 221, 152);
-    text-decoration: none;
-    
-}
-
-.footer-section h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* icônes  */
 .social-icons a {
-    display: inline-block;
-    margin-right: 10px;
+margin-right: 10px;
+display: inline-block;
 }
-
+        
 .social-icons img {
-    width: 20px;
-    height: 20px;
+width: 24px;
+height: 24px;
+filter: grayscale(100%);
+transition: filter 0.3s;
 }
-
-
+        
+.social-icons img:hover {
+filter: grayscale(0%);
+}
+        
+/*bas*/
 .auteur-section {
-    text-align: center;
-    background-color: #222;
-    color: #0ac752;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+background-color: #222;
+color: #ccc;
+padding: 10px;
+text-align: center;
+}
+        
+  /*bas 2*/      
+.footer-section, .auteur-section {
+width: 100%;
+}
+        
+/* En cas de contenu minimal, le footer reste en bas */
+.footer-section {
+margin-top: auto;
 }
 
 
